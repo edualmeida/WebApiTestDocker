@@ -28,7 +28,7 @@ namespace WebApiTestDocker.Controllers
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = r.GetValue() //Summaries[Random.Shared.Next(Summaries.Length)]
+                Summary = Summaries[Random.Shared.Next(Summaries.Length)] //r.GetValue() //
             })
             .ToArray();
         }
